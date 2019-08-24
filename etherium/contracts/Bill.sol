@@ -11,16 +11,18 @@ contract GenerateBill {
         minimumTax = minimum;
     }
     
-    function createBill(string memory billName) public {
-         address temp = address(new Bill(msg.sender, address(this), billName));
-         newBill = address(uint160(temp));
-         deployedBills.push(newBill);
+    function createBill(string memory billName, string memory ipfsHash, string memory details) public {
+        address temp = address(new Bill(msg.sender, address(this), billName, ipfsHash, details));
+        newBill = address(uint160(temp));
+        deployedBills.push(newBill);
     }
     
     function payTax() public payable {
         require(msg.value > minimumTax);
-        voters[msg.sender] = true;
-        votersCount++;
+        if(!voters[msg.sender]) {
+            voters[msg.sender] = true;
+            votersCount++;
+        }
     }
     
     function getTotalTax() public view returns (uint256) {
@@ -53,6 +55,8 @@ contract Bill {
     Plan[] public plans; //arr of plans
     address public politician;
     string public billDescription;
+    string public ipfsHash;
+    string public billDetails;
     // uint public votersCount; //total no of voters
     
     
@@ -61,10 +65,12 @@ contract Bill {
         _;
     }
     
-    constructor(address generator, address GeneratorContractAddress, string memory billName) public {
+    constructor(address generator, address GeneratorContractAddress, string memory billName, string memory x, string memory details) public {
         politician = generator;
         newGenerateBill = GenerateBill(GeneratorContractAddress);
         billDescription = billName;
+        ipfsHash = x;
+        billDetails = details;
     }
     
     // function getVotersCount() public returns (uint256) {
@@ -73,6 +79,10 @@ contract Bill {
     
     function() external payable {
     // nothing to do
+    }
+    
+    function getHash() public view returns (string memory x) {
+        return ipfsHash;
     }
     
     function createPlan(
