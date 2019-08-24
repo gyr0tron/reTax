@@ -38,15 +38,29 @@ class PlanRow extends Component {
         <Cell>{plan.recipient}</Cell>
         <Cell>
           {plan.complete ? null : (
-            <Button color='green' basic onClick={this.onApprove}>
-              Approve
+            <Button className="btn-rt success semantic px-0 px-1" onClick={this.onApprove}>
+              <div className="container-fluid">
+              <div className="d-flex justify-content-between align-items-center">
+                <div className="btn-rt-icon">
+                  <img className="" src="/static/img/thumbs-up.svg"/>
+                </div>
+                <div className="btn-rt-text">Approve</div>
+              </div>
+              </div>
             </Button>
           )}
         </Cell>
         <Cell>
           {plan.complete ? null : (
-            <Button color='teal' basic onClick={this.onFinalize}>
-              Finalize
+            <Button className="btn-rt primary semantic px-0 px-1" onClick={this.onFinalize}>
+              <div className="container-fluid">
+              <div className="d-flex justify-content-between align-items-center">
+                <div className="btn-rt-icon">
+                  <img className="" src="/static/img/checked.svg"/>
+                </div>
+                <div className="btn-rt-text">Finalize</div>
+              </div>
+              </div>
             </Button>
           )}
         </Cell>
