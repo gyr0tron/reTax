@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Card } from "semantic-ui-react";
 import $ from "jquery";
 import each from "async/each";
 import generator from "../etherium/generator";
@@ -54,18 +53,18 @@ class Index extends Component {
     $(window).unbind("scroll");
   }
   renderBills() {
-    const items = this.state.bills.map(bill => {
-      return {
-        header: bill.description,
-        description: (
-          <Link route={`/bills/${bill.address}`}>
-            <a>View Bill</a>
-          </Link>
-        ),
-        fluid: true
-      };
-    });
-    return <Card.Group items={items} />;
+    return this.state.bills.map((bill, key) => {
+      return(
+        <div className="card" style={{marginBottom:10}}>
+          <div className="card-body">
+            <h4 style={{marginBottom:0}}>{bill.description}</h4>
+            <Link route={`/bills/${bill.address}`}>
+              <a>View Bill</a>
+            </Link>
+          </div>
+        </div>
+      )
+    })
   }
   render() {
     return (
