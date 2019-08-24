@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 @import "app/argon.scss";
 @import "app/navbar.scss";
 @import "app/cards.scss";
 @import "app/shadows.scss";
 @import "app/home.scss";
-
 .info {
   margin-bottom: 15px;
   .key {
@@ -14,5 +14,37 @@
   .value {
     font-size: 1.3em;
     display: block;
+  }
+}
+
+.section-rt {
+  background: #d7ccff;
+  height: 100vh;
+}
+.form-control {
+  color: black;
+  font-size: 1rem;
+  &:focus {
+
+  }
+}
+.custom-file {
+  &-label {
+    font-size: 1rem;
+    &, &:focus {
+    }
+    &:after {
+      background: #9c8eff;
+      color: #fff;
+      padding: .65rem 2.2rem;
+    }
+  }
+}
+.btn-rt {
+  border-radius: 4px;
+  padding: .75rem 2.25rem;
+  &.btn-primary {
+    color: white;
+    background: #6a43f9;
   }
 }

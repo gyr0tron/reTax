@@ -10,16 +10,16 @@ class Query extends Component {
   constructor(props) {
     super(props);
   }
-  render() {
+  render () {
     return (
       <Layout title='Welcome to reTax'>
-        <section style={{paddingTop:100}}>
+        <section style={{ paddingTop: 100 }} className="section-rt">
           <div className="container">
-            <div className="card">
+            <div className="card card-rt">
               <div className="card-body">
                 <div className="row">
-                  <div className="col-sm-8">
-                    <h2 className="text-primary">Make your voice heard</h2>
+                  <div className="col-sm-6">
+                    <h2 className="text-primary font-weight-bold">Make your voice heard</h2>
                     <div className="form-group">
                       <input type="text" className="form-control" placeholder="Write a topic for your query" />
                     </div>
@@ -28,13 +28,19 @@ class Query extends Component {
                       </textarea>
                     </div>
                     <div className="form-group">
-                      <input type="file" multiple>
-                      </input>
+                    <div className="custom-file">
+  <input type="file" className="custom-file-input" id="customFile"/>
+  <label className="custom-file-label" htmlFor="customFile">Choose file</label>
+</div>
                     </div>
-                    <button className="btn btn-primary">Submit</button>
+                    <div className="float-right">
+                      <button className="btn btn-rt btn-primary">Submit</button>
+                    </div>
                   </div>
-                  <div className="col-sm-4">
-                    <img id='logo' src='/static/img/voice.svg' style={{margin:15}}/>
+                  <div className="col-sm-6 px-3">
+                    <div className="text-center">
+                      <img id='logo' src='/static/img/user.png' className="img-fluid" style={{ margin: 15, width: '350px', height: 'auto' }} />
+                    </div>
                   </div>
                 </div>
               </div>
