@@ -1,0 +1,156 @@
+$backgroundColor: #fff;
+$iconColor: #6e6e6e;
+$delay: 2500ms;
+.settings-wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.circle {
+  border-radius: 50%;
+}
+.arrow-rectangle {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  width: 90%;
+  height: 10%;
+  background-color: $iconColor;
+  -webkit-clip-path: polygon(95% 0%, 100% 50%, 95% 100%, 0% 100%, 5% 50%, 0% 0%);
+  clip-path: polygon(95% 0%, 100% 50%, 95% 100%, 0% 100%, 5% 50%, 0% 0%);
+  -webkit-animation: welldone $delay linear 0s infinite normal forwards;
+  animation: welldone $delay linear 0s infinite normal forwards;
+}
+.arrow-placeholder {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  width: 94%;
+  height: 94%;
+  background-color: $backgroundColor;
+  border-radius: 50%;
+}
+.arrow-circle {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  background-color: $iconColor;
+  border-radius: 50%;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background-color: $backgroundColor;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: -1%;
+    left: 45%;
+    width: 10%;
+    height: 51%;
+    background-color: $backgroundColor;
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    -webkit-animation: arrow-move $delay linear 0s infinite normal forwards;
+    animation: arrow-move $delay linear 0s infinite normal forwards;
+    -webkit-clip-path: polygon(50% 1%, 0 12%, 50% 23%, 100% 23%, 50% 12%, 100% 1%);
+    clip-path: polygon(50% 1%, 0 12%, 50% 23%, 100% 23%, 50% 12%, 100% 1%);
+  }
+}
+.gear {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%; 
+  height: 50%;
+  background-color: $iconColor;
+  border-radius: 50%;
+  -webkit-animation: gear-rotate $delay linear 0s infinite;
+  animation: gear-rotate $delay linear 0s infinite;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    background-color: $backgroundColor;
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    z-index: 1;
+  }
+}
+$rotationAngle: 0deg;
+@for $i from 1 through 12{
+  .tooth-#{$i} {
+    position: absolute;
+    left: 43%;
+    top: -10%;
+    width: 14%;
+    height: 120%;
+    border-radius: 5px;
+    background: $iconColor;
+    transform: rotate($rotationAngle);
+    $rotationAngle: $rotationAngle + 30deg;
+  }
+}
+@-webkit-keyframes arrow-move {
+  to {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@keyframes arrow-move {
+  to {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes gear-rotate {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes gear-rotate {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes welldone {
+  0%,
+  45% {
+    background-color: $iconColor;
+  }
+  50% {
+    background-color: #32b67a;
+  }
+  55%,
+  100% {
+    background-color: $iconColor;
+  }
+}
+@keyframes welldone {
+  0%,
+  45% {
+    background-color: $iconColor;
+  }
+  50% {
+    background-color: #32b67a;
+  }
+  55%,
+  100% {
+    background-color: $iconColor;
+  }
+}

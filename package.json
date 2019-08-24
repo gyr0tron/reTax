@@ -1,0 +1,45 @@
+{
+  "name": "retax",
+  "version": "1.0.0",
+  "description": "Helping you relax, simplifying the matters of tax",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "next build"
+  },
+  "engines": {
+    "node": "8.11.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gyr0tron/reTax.git"
+  },
+  "author": "Simmar Kalsi",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/gyr0tron/reTax/issues"
+  },
+  "homepage": "https://github.com/gyr0tron/reTax#readme",
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "async": "^2.6.2",
+    "dotenv": "^6.2.0",
+    "fs-extra": "^7.0.1",
+    "ganache-cli": "^6.4.1",
+    "jquery": "^3.3.1",
+    "mocha": "^6.0.2",
+    "next": "^8.0.3",
+    "next-routes": "^1.4.2",
+    "node-sass": "^4.11.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.86.0",
+    "solc": "^0.5.5",
+    "truffle-hdwallet-provider": "^1.0.5",
+    "web3": "^1.0.0-beta.37"
+  }
+}

@@ -1,0 +1,15 @@
+.navbar {
+  width: 100%;
+  z-index: 1080;
+  text-transform: uppercase;
+  position: fixed;
+}
+.navbar-brand {
+  margin-top: -10px;
+}
+.navbar-space {
+  height: 100px;
+}
+.navbar.bg-white {
+  @extend .z-depth-1;
+}

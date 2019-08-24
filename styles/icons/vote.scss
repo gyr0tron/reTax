@@ -1,0 +1,153 @@
+$d: 215px;
+$w: $d;
+$h: $d;
+$color-base: rgba(85, 116, 151, 0.4);
+$color-btn: #1aaf5d;
+
+$background-bid: url("/static/img/vote.png") no-repeat;
+
+$hover: 650ms;
+$animationDelay: 2500ms;
+
+$ease: cubic-bezier(0.68, -0.55, 0.265, 1.65);
+
+.circle {
+  cursor: pointer;
+  width: $w;
+  height: $h;
+  user-select: none;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.mask-background {
+  background: rgba(27, 45, 65, 0) !important;
+  position: absolute;
+}
+
+.mask-a,
+.mask-b {
+  border-radius: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.mask-a {
+  background: $color-base;
+  overflow: hidden;
+  // Solution to the problem of overflow. Chrome
+  -webkit-mask-position: 0 0;
+  -webkit-mask-size: 215px 215px;
+  z-index: 10;
+}
+
+.mask-b {
+  background: $color-base;
+}
+
+/*=====================================================================================
+    HAND
+=======================================================================================
+*/
+
+.mask-a {
+  .hand {
+    background-position: 0px 0px;
+    height: 260px;
+    z-index: 10;
+    animation: hand $animationDelay alternate infinite;
+  }
+  .hand-1 {
+    background-position: -86px -50px;
+    height: 204px;
+    animation: hand1 $animationDelay alternate infinite;
+    &::before {
+      background-position: -154px -50px;
+      clip: rect(0px, 1px, 84px, 0px);
+      content: "";
+      top: 0;
+      left: 0;
+      width: 16px;
+      height: 84px;
+    }
+    overflow: hidden;
+  }
+  .hand-2 {
+    background-position: -173px -49px;
+    top: 0;
+    left: 0.2em;
+    margin-top: 7em;
+    width: 57px;
+    height: 177px;
+    animation: hand2 $animationDelay alternate infinite;
+    &::before {
+      background-position: -232px -49px;
+      clip: rect(0px, 28px, 111px, 28px);
+      content: "";
+      top: 0;
+      right: 0;
+      width: 28px;
+      height: 111px;
+    }
+    overflow: hidden;
+  }
+}
+
+.mask-b {
+  .hand {
+    height: 48px;
+  }
+  .hand-1 {
+    background-position: -171px 0px;
+    height: 41px;
+  }
+}
+
+.hand,
+.hand-1,
+.hand-1::before,
+.hand-2,
+.hand-2::before {
+  background: $background-bid;
+  position: absolute;
+}
+
+.hand {
+  top: 0;
+  left: 50%;
+  margin-top: 3.5em;
+  margin-left: -42px;
+  width: 83px;
+}
+
+.hand-1 {
+  top: 0;
+  right: 0.2em;
+  margin-top: 5.5em;
+  width: 66px;
+}
+
+@keyframes hand {
+  0% {
+  }
+  100% {
+    transform: translate3d(0, -4em, 0);
+  }
+}
+
+@keyframes hand1 {
+  0% {
+  }
+  100% {
+    transform: translate3d(0.3em, -3.5em, 0);
+  }
+}
+
+@keyframes hand2 {
+  0% {
+  }
+  100% {
+    transform: translate3d(0.5em, -3em, 0);
+  }
+}
