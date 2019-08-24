@@ -28,10 +28,10 @@ class Query extends Component {
                       </textarea>
                     </div>
                     <div className="form-group">
-                    <div className="custom-file">
-  <input type="file" className="custom-file-input" id="customFile"/>
-  <label className="custom-file-label" htmlFor="customFile">Choose file</label>
-</div>
+                      <div className="custom-file">
+                        <input type="file" className="custom-file-input" id="customFile" />
+                        <label className="custom-file-label text-dark" htmlFor="customFile">Select a file</label>
+                      </div>
                     </div>
                     <div className="float-right">
                       <button className="btn btn-rt btn-primary">Submit</button>

@@ -16,7 +16,9 @@
     display: block;
   }
 }
-
+.text-primary {
+  color: #6a43f9 !important;
+}
 .section-rt {
   background: #d7ccff;
   height: 100vh;
@@ -47,4 +49,21 @@
     color: white;
     background: #6a43f9;
   }
+}
+
+.rt-title-logo {
+  flex: 0 0 10%;
+  img {
+    height: 100px;
+  }
+}
+.rt-title-text {
+  flex: 0 0 90%;
+  font-weight: 600;
+  color: #6a43f9;
+  font-size: 2rem;
+  line-height: 1;
+}
+.rt-gray {
+  background: #e5e5e5;
 }
