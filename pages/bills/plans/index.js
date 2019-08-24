@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Layout from "./../../components/Layouts/Layouts";
+import Layout from "./../../../components/Layouts/Layouts";
 export default class Plans extends Component {
   state = {
   };
@@ -20,32 +20,7 @@ export default class Plans extends Component {
                       <div className="rt-title-text">Vote for Plan</div>
                     </div>
                   </div>
-                  {/* <div className="col-sm-6">
-                    <h2 className="text-primary font-weight-bold">Make your voice heard</h2>
-                    <div className="form-group">
-                      <input type="text" className="form-control" placeholder="Write a topic for your query" />
-                    </div>
-                    <div className="form-group">
-                      <textarea className="form-control" rows="4" cols="50" placeholder="Give detail information about your query">
-                      </textarea>
-                    </div>
-                    <div className="form-group">
-                      <div className="custom-file">
-                        <input type="file" className="custom-file-input" id="customFile" />
-                        <label className="custom-file-label text-dark" htmlFor="customFile">Select a file</label>
-                      </div>
-                    </div>
-                    <div className="float-right">
-                      <button className="btn btn-rt btn-primary">Submit</button>
-                    </div>
-                  </div>
-                  <div className="col-sm-6 px-3">
-                    <div className="text-center">
-                      <img id='logo' src='/static/img/votes-graph.svg' className="img-fluid" />
-                    </div>
-                  </div> */}
                 </div>
-
                 <div className='row'>
                   <div className="card card-rt col-md-12 bg-pink mt-3">Bill Name</div>
                 </div>
@@ -75,7 +50,6 @@ export default class Plans extends Component {
                             <td>
                               <button className="btn btn-rt success">
                                 <div className="btn-rt--icon">
-                                  {/* <img src=> */}
                                 </div>
                                 <div className="btn-rt--text">
                                   Support
@@ -85,7 +59,6 @@ export default class Plans extends Component {
                             <td>
                               <button className="btn btn-rt success">
                                 <div className="btn-rt--icon">
-                                  {/* <img src=> */}
                                 </div>
                                 <div className="btn-rt--text">
                                   Finalize

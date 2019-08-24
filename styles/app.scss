@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 @import "app/argon.scss";
 @import "app/navbar.scss";
 @import "app/cards.scss";
@@ -27,42 +27,45 @@
   color: black;
   font-size: 1rem;
   &:focus {
-
   }
 }
 .custom-file {
   &-label {
     font-size: 1rem;
-    &, &:focus {
+    &,
+    &:focus {
     }
     &:after {
       background: #9c8eff;
       color: #fff;
-      padding: .65rem 2.2rem;
+      padding: 0.65rem 2.2rem;
     }
   }
 }
 .btn-rt {
   border-radius: 4px;
-  padding: .75rem 2.25rem;
+  padding: 0.75rem 2.25rem;
   &.btn-primary {
     color: white;
     background: #6a43f9;
   }
 }
-
-.rt-title-logo {
-  flex: 0 0 10%;
-  img {
-    height: 100px;
+.rt-title {
+  display: flex;
+  align-content: flex-end;
+  &-logo {
+    flex: 0 0 10%;
+    img {
+      height: 100px;
+    }
   }
-}
-.rt-title-text {
-  flex: 0 0 90%;
-  font-weight: 600;
-  color: #6a43f9;
-  font-size: 2rem;
-  line-height: 1;
+  &-text {
+    flex: 0 0 90%;
+    font-weight: 600;
+    color: #6a43f9;
+    font-size: 2rem;
+    line-height: 1;
+  }
 }
 .rt-gray {
   background: #e5e5e5;

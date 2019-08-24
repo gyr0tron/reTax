@@ -173,7 +173,7 @@ class Index extends Component {
                 </div>
               </div>
               <div className='col-lg-3'>
-                <div class='border-0 px-1'>
+                <div className='border-0 px-1'>
                   <div className='text-center'>
                     <Money />
                     <h4 style={{marginTop:15}}>A public funding pool is generated</h4>
@@ -181,7 +181,7 @@ class Index extends Component {
                 </div>
               </div>
               <div className='col-lg-3'>
-                <div class='border-0 px-1'>
+                <div className='border-0 px-1'>
                   <div className='text-center'>
                     <Vote />
                     <h4 style={{marginTop:15}}>Citizens vote for their preferable plan</h4>
@@ -189,7 +189,7 @@ class Index extends Component {
                 </div>
               </div>
               <div className='col-lg-3'>
-                <div class='border-0 px-1'>
+                <div className='border-0 px-1'>
                   <div className='text-center'>
                     <Setting />
                     <h4 style={{marginTop:15}}>On success, money is transferred to the contractors and the plan is executed</h4>

@@ -1,8 +1,10 @@
 const routes = require("next-routes")();
 
-routes.add("/bills/new", "/bills/new");
-routes.add("/bills/:address", "/bills/show");
-// routes.add("/bills/:address", "/bills/show");
-routes.add("/bills/:address/plans", "/bills/plans");
+
+routes.add("/bills/new", "/bills/new"); // TODO: Change (Simmar)
+routes.add("/bills/:address", "/bills/show"); // TODO: Change (Simmar)
+routes.add("/bills/:address/plans", "/bills/plans/index"); // TODO: Change (Simmar)
+routes.add("/bills/:address/plans/new", "/bills/plans/new"); // TODO: Change (Simmar)
+// routes.add("/bills/:address", "/bills/show"); 
 
 module.exports = routes;
