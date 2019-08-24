@@ -66,7 +66,7 @@ export default class BillShow extends Component {
                   </div>
                   <div className='col-sm-12'>
                     <div className='info'>
-                      <span className='key'>Plans in a bill</span>
+                      <span className='key'>Plans in the bill</span>
                       <span className='value'>{this.props.plansCount}</span>
                     </div>
                   </div>
