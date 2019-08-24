@@ -44,13 +44,16 @@
 }
 .btn-rt {
   border-radius: 4px;
-  padding: 0.75rem 2.25rem;
-  &.btn-primary {
+  &, &.semantic {
+    padding: 0.75rem 2.5rem;
+  }
+  &.btn-primary, &.primary {
     color: white;
-    background: #6a43f9;
+    background: #6a43f9 !important;
   }
   &.success {
-    background: #00ff9d;
+    color: white;
+    background: #00ff9d !important;
   }
 }
 
@@ -62,6 +65,11 @@
   &.primary {
     background: #6a43f9;
   }
+}
+
+.rt-subtitle {
+  font-size: 1.25rem;
+  color: #111;
 }
 
 .rt-title {
@@ -79,6 +87,7 @@
     font-weight: 600;
     color: #6a43f9;
     font-size: 2rem;
+    text-transform: capitalize;
     line-height: 1;
   }
 }
