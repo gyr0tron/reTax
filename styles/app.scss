@@ -49,13 +49,27 @@
     color: white;
     background: #6a43f9;
   }
+  &.success {
+    background: #00ff9d;
+  }
 }
+
+.rt-bar {
+  height: 6px;
+  width: 200px;
+  background: #666;
+  border-radius: 10rem;
+  &.primary {
+    background: #6a43f9;
+  }
+}
+
 .rt-title {
   display: flex;
   align-items: flex-end;
   &-logo {
     flex: 0 0 10%;
-    padding: 0 .75rem;
+    margin-right: .75rem;
     img {
       height: 100px;
     }
