@@ -27,39 +27,46 @@ class PlanRow extends Component {
     const { Row, Cell } = Table;
     const { id, plan } = this.props;
     const readyToFinalize = plan.approveVoteCount > this.props.votersCount / 2;
+    // console.log(typeof readyToFinalize);
     return (
       <Row
         disabled={plan.complete}
         positive={readyToFinalize && !plan.complete}
       >
-        <Cell>{id}</Cell>
+        <Cell>{readyToFinalize ? "Approved" : "Pending"}</Cell>
         <Cell>{plan.description}</Cell>
         <Cell>{web3.utils.fromWei(plan.value, "Ether")}</Cell>
         <Cell>{plan.recipient}</Cell>
         <Cell>
           {plan.complete ? null : (
-            <Button className="btn-rt success semantic px-0 px-1" onClick={this.onApprove}>
-              <div className="container-fluid">
-              <div className="d-flex justify-content-between align-items-center">
-                <div className="btn-rt-icon">
-                  <img className="" src="/static/img/thumbs-up.svg"/>
+            <Button
+              className='btn-rt success semantic px-0 px-1'
+              onClick={this.onApprove}
+            >
+              <div className='container-fluid'>
+                <div className='d-flex justify-content-between align-items-center'>
+                  <div className='btn-rt-icon'>
+                    <img className='' src='/static/img/thumbs-up.svg' />
+                  </div>
+                  <div className='btn-rt-text'>Approve</div>
                 </div>
-                <div className="btn-rt-text">Approve</div>
-              </div>
               </div>
             </Button>
           )}
         </Cell>
         <Cell>
           {plan.complete ? null : (
-            <Button className="btn-rt primary semantic px-0 px-1" onClick={this.onFinalize}>
-              <div className="container-fluid">
-              <div className="d-flex justify-content-between align-items-center">
-                <div className="btn-rt-icon">
-                  <img className="" src="/static/img/checked.svg"/>
+            <Button
+              className='btn-rt primary semantic px-0 px-1'
+              onClick={this.onFinalize}
+            >
+              <div className='container-fluid'>
+                <div className='d-flex justify-content-between align-items-center'>
+                  <div className='btn-rt-icon'>
+                    <img className='' src='/static/img/checked.svg' />
+                  </div>
+                  <div className='btn-rt-text'>Finalize</div>
                 </div>
-                <div className="btn-rt-text">Finalize</div>
-              </div>
               </div>
             </Button>
           )}
