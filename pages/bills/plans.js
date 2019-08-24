@@ -47,15 +47,15 @@ export default class Plans extends Component {
                 </div>
 
                 <div className='row'>
-                  <div className="card card-rt col-md-10 bg-pink mt-3">Bill Name</div>
+                  <div className="card card-rt col-md-12 bg-pink mt-3">Bill Name</div>
                 </div>
                 <div className='row'>
-                  <div className="card card-rt col-md-10 bg-red py-3 mt-3">
+                  <div className="card card-rt col-md-12 bg-red py-3 mt-3">
                     <div>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
                   </div>
                 </div>
                 <div className="row">
-                  <div className="col-md-8">
+                  <div className="col-md-10">
                     <div className="table-responsive">
                       <table>
                         <thead>
@@ -102,7 +102,6 @@ export default class Plans extends Component {
                             <td>
                               <button className="btn btn-rt success">
                                 <div className="btn-rt--icon">
-                                  {/* <img src=> */}
                                 </div>
                                 <div className="btn-rt--text">
                                   Support
@@ -112,7 +111,6 @@ export default class Plans extends Component {
                             <td>
                               <button className="btn btn-rt success">
                                 <div className="btn-rt--icon">
-                                  {/* <img src=> */}
                                 </div>
                                 <div className="btn-rt--text">
                                   Finalize
@@ -124,6 +122,15 @@ export default class Plans extends Component {
                         </tbody>
                       </table>
                     </div>
+                  </div>
+                  <div className="col-md-2">
+                    <button className="btn btn-rt success">
+                      <div className="btn-rt--icon">
+                      </div>
+                      <div className="btn-rt--text">
+                        Create plan
+                  </div>
+                    </button>
                   </div>
                 </div>
               </div>
