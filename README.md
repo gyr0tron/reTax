@@ -27,9 +27,10 @@
 <p align="center">😽  Helping you relax, simplifying the matters of tax 💰</p>
 
 - - -
-<h2> 🔭 Overview</h2>
-<p align="center"><img src="./static/img/screen1.png" width="500"></p>
-
+<h2> 🔭 Demo</h2>
+  <a href="https://www.youtube.com/watch?v=c2q-qymMvXY" rel="_blank">
+    <img src="./static/img/reTax-yt-cover.png" alt="reTax YT Cover">
+  </a>
 <br>
 
 ## 🎥 Visualization
@@ -57,7 +58,7 @@
 Please take a look at our [contributing](https://github.com/gyr0tron/reTax/blob/master/CONTRIBUTING.md/) guidelines if you are interested in helping!
 
 ## 📝 Note
-This project was developed in about 24 hours at [Mumbai Hackathon 2019](https://mumbaihackathon.in) by `Team AntiSocialSocialClub`. We are open to suggestions and any help to related to the project.
+This project was developed in about 24 hours at [HaXplore](https://codefest.tech/haxplore) by `Team AntiSocialSocialClub`. We are open to suggestions and any help to related to the project.
 
 ## 🧰 Contributors
 <p>
@@ -66,10 +67,4 @@ This project was developed in about 24 hours at [Mumbai Hackathon 2019](https://
   <a href="https://github.com/bhaktijkoli/" rel="_blank">Bhaktij Koli</a>
   <br>
   <a href="https://github.com/frozen4code/" rel="_blank">Bhupender Singh</a>
-</p>
-
-## 🧠 Todo
-<p>
-  <a>🔍 Add-on bill suggestions to public </a>
-  <br>
 </p>
