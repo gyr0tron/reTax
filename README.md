@@ -58,11 +58,3 @@ Please take a look at our [contributing](https://github.com/gyr0tron/reTax/blob/
 ## 📝 Note
 This project was developed in about 24 hours at [HaXplore](https://codefest.tech/haxplore) by `Team AntiSocialSocialClub`. We are open to suggestions and any help to related to the project.
 
-## 🧰 Contributors
-<p>
-  <a href="https://github.com/gyr0tron/" rel="_blank">Simmar Kalsi</a>
-  <br>
-  <a href="https://github.com/bhaktijkoli/" rel="_blank">Bhaktij Koli</a>
-  <br>
-  <a href="https://github.com/frozen4code/" rel="_blank">Bhupender Singh</a>
-</p>
