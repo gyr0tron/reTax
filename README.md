@@ -27,14 +27,12 @@
 <p align="center">😽  Helping you relax, simplifying the matters of tax 💰</p>
 
 - - -
-<h2> 🔭 Demo</h2>
+<h2> 🎥 Demo</h2>
   <a href="https://www.youtube.com/watch?v=c2q-qymMvXY" rel="_blank">
     <img src="./static/img/reTax-yt-cover.png" alt="reTax YT Cover">
   </a>
 <br>
 
-## 🎥 Visualization
-<p align="center"><img src="./static/img/politician.gif"></p>
 
 ## 🌟 Features
 - Eliminates corruption
