@@ -26,7 +26,7 @@
 <p>
   <a href="https://github.com/gyr0tron/" rel="_blank">Simmar Kalsi</a>
   <br>
-  <a href="https://github.com/frozen4code/" rel="_blank">Bhupender Singh</a>
+  <a href="https://github.com/localhoax/" rel="_blank">Bhupender Singh</a>
   <br>
   <a href="https://github.com/bhaktijkoli/" rel="_blank">Bhaktij Koli</a>
 </p>
