@@ -35,7 +35,7 @@
     "mocha": "^6.2.0",
     "next": "^8.0.3",
     "next-routes": "^1.4.2",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "semantic-ui-css": "^2.4.1",
